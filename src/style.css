@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+/* HEADER */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    background: url('https://www.hdcarwallpapers.com/walls/vorsteiner_zaragoza_lamborghini_aventador_5k-HD.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    text-shadow: 0 0 20px #ffcc00;
+    z-index: 2;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.btn {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: white;
+    box-shadow: 0 0 15px white;
+}
+
+/* FEATURES */
+.features {
+    text-align: center;
+    padding: 40px;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.feature-card:hover {
+    box-shadow: 0 0 15px white;
+}
+
+/* GALLERY */
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-container img {
+    width: 90%;
+    max-width: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    scroll-snap-align: center;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px white;
+}
+
+/* RESERVE */
+.reserve {
+    text-align: center;
+    padding: 40px;
+}
+
+.reserve input, .reserve button {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 350px;
+}
+
+.reserve button {
+    background: #ffcc00;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reserve button:hover {
+    background: white;
+    box-shadow: 0 0 15px white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container img {
+        width: 95%;
+    }
+}

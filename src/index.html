@@ -1,32 +1,80 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Responsive Text Layout</title>
-<link rel="stylesheet" href="styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini HyperDrive</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <h1 class = "Ab">About</h1>
-  <div class = "flex">
-    <div class = "p1">Help</div>
-    <div class = "p2">Pick</div>
-  </div>
-<h1>Heading</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-</div>
-<div class = "container">
-  <h1>Welcome</h1>
-  <div class = "flex">
-    <div class = "p1">OPEN</div>
-    <div class = "p2">CLOSE</div>
-  </div>
-  <div class = "flex">
-    <div class = "p1">LEFT</div>
-    <div class = "p2">RIGHT</div>
-  </div>
-  </div>
-</div>
+
+    <!-- HEADER -->
+    <header class="navbar">
+        <h1 class="logo">HyperDrive</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reserve">Reserve</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <h1 class="hero-title">THE FUTURE OF SPEED</h1>
+        <p class="hero-subtitle">Power. Precision. Perfection.</p>
+        <a href="#features" class="btn">Explore Now</a>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>1000+ HP V12 Engine</h3>
+                <p>Hybrid technology for maximum performance.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Futuristic Aerodynamics</h3>
+                <p>Designed for extreme speed & control.</p>
+            </div>
+            <div class="feature-card">
+                <h3>AI-Enhanced Driving</h3>
+                <p>Next-level intelligence at your fingertips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="https://www.hdcarwallpapers.com/walls/vorsteiner_zaragoza_lamborghini_aventador_5k-HD.jpg" alt="Lamborghini Aventador">
+            <img src="https://images.hdqwalls.com/download/lamborghini-urus-performante-suv-rear-10k-c4-3840x2160.jpg" alt="Lamborghini yellow">
+            <img src="https://www.hdcarwallpapers.com/walls/lamborghini_centenario_4k-HD.jpg" alt="Lamborghini Centenario">
+            <img src="https://images.hdqwalls.com/download/lamborghini-aventador-svj-new-08-3840x2160.jpg" alt="Lamborghini blue">
+            <img src="https://images.hdqwalls.com/download/2020-lamborghini-aventador-svj-roadster-dy-3840x2160.jpg" alt="Lamborghini blue">
+            <img src="https://images.hdqwalls.com/download/2018-lamborghini-aventador-svj-side-view-8r-3840x2160.jpg" alt="Lamborghini avata">
+            <img src="https://images.hdqwalls.com/download/lamborghini-aventador-svj-63-2018-front-k7-3840x2160.jpg" alt="Lamborghini v12">
+        </div>
+    </section>
+
+    <!-- RESERVE -->
+    <section id="reserve" class="reserve">
+        <h2>Reserve Your Lamborghini</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Pre-Order Now</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Lamborghini HyperDrive. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
